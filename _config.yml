@@ -1,0 +1,11 @@
+url: https://verisafeai.github.io
+baseurl: ""
+
+# Site settings
+title: VeriSafe
+email: joshua.wendland@rub.de
+description: "Making autonomous systems verifiably safe. VeriSafe provides end-to-end automation with formally verified, safe autonomous AI agents."
+
+# Build settings
+markdown: kramdown
+permalink: pretty

@@ -1,0 +1,699 @@
+---
+layout: default
+title: Home
+---
+
+<!-- ================================================================
+     NAVIGATION
+     ================================================================ -->
+<nav id="main-nav" class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <!-- Logo -->
+    <a class="nav__logo" href="#page-top">
+      <img src="{{ "/assets_extracted/Logo_VeriSafe.png" | prepend: site.baseurl }}" alt="VeriSafe logo" width="36" height="36">
+      <span class="nav__logo-text">VeriSafe</span>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav__links" role="list">
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#solution">Solution</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#partners">Partners</a></li>
+    </ul>
+
+    <!-- Desktop CTA -->
+    <div class="nav__cta">
+      <a href="#contact" class="btn btn--primary" style="padding: 0.625rem 1.25rem; font-size: 0.875rem;">
+        Get in Touch
+      </a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button id="nav-toggle" class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="nav-mobile" class="nav__mobile" role="menu">
+    <a href="#vision" role="menuitem">Vision</a>
+    <a href="#problem" role="menuitem">Problem</a>
+    <a href="#solution" role="menuitem">Solution</a>
+    <a href="#industries" role="menuitem">Industries</a>
+    <a href="#market" role="menuitem">Market</a>
+    <a href="#team" role="menuitem">Team</a>
+    <a href="#partners" role="menuitem">Partners</a>
+    <a href="#contact" role="menuitem" style="color: #60c9f8; margin-top: 0.5rem;">Get in Touch &rarr;</a>
+  </div>
+</nav>
+
+<!-- ================================================================
+     HERO
+     ================================================================ -->
+<section id="page-top" class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__grid-overlay" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <div class="hero__badge" aria-label="Status: Now raising seed investment">
+      <span class="hero__badge-dot"></span>
+      Now Raising Seed Investment
+    </div>
+
+    <h1 class="hero__headline">
+      Making autonomous systems<br>
+      <em>verifiably safe.</em>
+    </h1>
+
+    <p class="hero__sub">
+      VeriSafe brings formal verification to AI agents in the real world &mdash; giving autonomous systems mathematical safety guarantees, not just statistical ones.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#solution" class="btn btn--primary">
+        See How It Works &rarr;
+      </a>
+      <a href="#contact" class="btn btn--outline">Partner With Us</a>
+    </div>
+
+    <div class="hero__pillars" role="list">
+      <div class="hero__pillar" role="listitem">
+        <span class="hero__pillar-icon" aria-hidden="true">&#x1F6E1;&#xFE0F;</span>
+        <span class="hero__pillar-label">Formally Safe</span>
+      </div>
+      <div class="hero__pillar" role="listitem">
+        <span class="hero__pillar-icon" aria-hidden="true">&#x1F3AE;</span>
+        <span class="hero__pillar-label">Human Controlled</span>
+      </div>
+      <div class="hero__pillar" role="listitem">
+        <span class="hero__pillar-icon" aria-hidden="true">&#x2713;</span>
+        <span class="hero__pillar-label">Mathematically Verified</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="hero__scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ================================================================
+     VISION
+     ================================================================ -->
+<section id="vision" class="vision section">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Our Vision</span>
+      <h2 class="section-title">Safe, controllable, and verifiable<br>autonomous AI agents</h2>
+      <div class="divider divider--center"></div>
+      <p class="section-subtitle">
+        VeriSafe's core mission is enabling autonomous AI systems to operate safely in the real world &mdash; by design, not by accident. We achieve this through three foundational pillars.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <article class="vision__pillar fade-in">
+        <div class="vision__pillar-icon-wrap vision__pillar-icon-wrap--teal">
+          &#x1F6E1;&#xFE0F;
+        </div>
+        <h3>Safe</h3>
+        <p>
+          Formal guarantees prevent harmful actions before they happen. Our systems enforce safety constraints mathematically &mdash; no edge case can slip through.
+        </p>
+      </article>
+
+      <article class="vision__pillar fade-in">
+        <div class="vision__pillar-icon-wrap vision__pillar-icon-wrap--blue">
+          &#x1F3AE;
+        </div>
+        <h3>Controllable</h3>
+        <p>
+          Human oversight remains active at every critical decision point. Operators retain authority and visibility into what autonomous agents are doing and why.
+        </p>
+      </article>
+
+      <article class="vision__pillar fade-in">
+        <div class="vision__pillar-icon-wrap vision__pillar-icon-wrap--navy">
+          &Sigma;
+        </div>
+        <h3>Verifiable</h3>
+        <p>
+          Mathematically verified policies backed by formal proofs. Our certified safe policies meet the strictest regulatory requirements by construction.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     PROBLEM
+     ================================================================ -->
+<section id="problem" class="problem">
+  <div class="container">
+    <div class="problem__layout">
+      <div class="problem__text">
+        <span class="section-label">The Problem</span>
+        <h2 class="section-title">Autonomous AI systems remain undeployed in safety-critical domains</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle" style="margin-bottom: 0;">
+          The potential of autonomous AI agents is enormous &mdash; but deployment in high-stakes environments is blocked by a fundamental lack of trust, formal safety guarantees, and regulatory clarity.
+        </p>
+
+        <div class="problem__points">
+          <div class="problem__point fade-in">
+            <div class="problem__point-icon">&#x26A0;&#xFE0F;</div>
+            <div>
+              <h4>No Trust, No Deployment</h4>
+              <p>Organizations cannot risk deploying AI agents in critical systems without provable safety assurances. Statistical accuracy is not enough &mdash; a single failure can be catastrophic.</p>
+            </div>
+          </div>
+
+          <div class="problem__point fade-in">
+            <div class="problem__point-icon">&#x1F4CB;</div>
+            <div>
+              <h4>Regulatory Barriers</h4>
+              <p>Emerging regulations (EU AI Act, ISO standards) require formal evidence of safety. Current AI systems cannot provide this, leaving compliance a blocker for entire industries.</p>
+            </div>
+          </div>
+
+          <div class="problem__point fade-in">
+            <div class="problem__point-icon">&#x1F52E;</div>
+            <div>
+              <h4>Opaque Decision-Making</h4>
+              <p>Black-box AI models make decisions that engineers cannot audit or predict. In safety-critical deployments, this unpredictability is unacceptable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem__visual fade-in">
+        <img
+          src="{{ "/assets_extracted/slide03_image01.gif" | prepend: site.baseurl }}"
+          alt="Illustration of the autonomous AI deployment problem"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     SOLUTION
+     ================================================================ -->
+<section id="solution" class="solution">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label" style="color: #5eead4;">Our Solution</span>
+      <h2 class="section-title">End-to-end automation with<br>verifiably safe systems</h2>
+      <div class="divider divider--center" style="background: linear-gradient(90deg, #0080BD, #0D9488);"></div>
+      <p class="section-subtitle" style="margin: 0 auto; color: rgba(255,255,255,0.65);">
+        VeriSafe's technology stack takes raw sensor data and delivers certified safe policies &mdash; with mathematical guarantees at every step of the pipeline.
+      </p>
+    </div>
+
+    <div class="solution__cards">
+      <article class="solution__card fade-in">
+        <div class="solution__card-badge solution__card-badge--green">
+          <span>&#x2713;</span> Key Differentiator
+        </div>
+        <div class="solution__card-icon">&#x26A1;</div>
+        <h3>End-to-End Automation</h3>
+        <p>
+          From raw sensor input to certified policy deployment &mdash; fully automated. No hand-crafted rules, no manual intervention in the verification pipeline.
+        </p>
+      </article>
+
+      <article class="solution__card fade-in">
+        <div class="solution__card-badge solution__card-badge--green">
+          <span>&#x2713;</span> Key Differentiator
+        </div>
+        <div class="solution__card-icon">&#x1F6E1;&#xFE0F;</div>
+        <h3>Verifiably Safe</h3>
+        <p>
+          Formal proofs &mdash; not probabilistic claims. We use model checking and policy synthesis to generate safety certificates that satisfy both internal requirements and external regulatory standards.
+        </p>
+      </article>
+
+      <article class="solution__card fade-in">
+        <div class="solution__card-badge solution__card-badge--green">
+          <span>&#x2713;</span> Key Differentiator
+        </div>
+        <div class="solution__card-icon">&#x1F52D;</div>
+        <h3>Sequential Planning</h3>
+        <p>
+          Long-horizon planning with formal safety constraints. Our agents plan sequences of actions that remain safe across an entire task horizon, not just the next step.
+        </p>
+      </article>
+    </div>
+
+    <!-- Comparison table -->
+    <div class="solution__comparison fade-in" style="margin-top: 4rem;">
+      <div style="margin-bottom: 1.5rem;">
+        <span class="section-label" style="color: #5eead4;">Competitive Landscape</span>
+        <h3 style="color: white; font-size: 1.375rem; margin-top: 0.5rem;">How VeriSafe compares</h3>
+      </div>
+      <table aria-label="Feature comparison between VeriSafe and competitors">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>VeriSafe</th>
+            <th>Typical Competitors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight">
+            <td>End-to-end automation</td>
+            <td><span class="check">&#x2713;</span></td>
+            <td><span class="cross">&#x2717;</span></td>
+          </tr>
+          <tr class="highlight">
+            <td>Verifiably safe (formal proofs)</td>
+            <td><span class="check">&#x2713;</span></td>
+            <td><span class="partial">&#x223C;</span> Probabilistic only</td>
+          </tr>
+          <tr class="highlight">
+            <td>Long-term sequential planning</td>
+            <td><span class="check">&#x2713;</span></td>
+            <td><span class="partial">&#x223C;</span> Short/No horizon</td>
+          </tr>
+          <tr class="highlight">
+            <td>Runtime shielding</td>
+            <td><span class="check">&#x2713;</span></td>
+            <td><span class="cross">&#x2717;</span> Post-hoc monitoring only</td>
+          </tr>
+          <tr class="highlight">
+            <td>Regulatory compliance ready</td>
+            <td><span class="partial">&#x2713;</span> WIP</td>
+            <td><span class="partial">&#x223C;</span> Best effort</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     INDUSTRIES
+     ================================================================ -->
+<section id="industries" class="industries section">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Target Industries</span>
+      <h2 class="section-title">Built for the world's most demanding applications</h2>
+      <div class="divider divider--center"></div>
+      <p class="section-subtitle">
+        VeriSafe's formal verification technology addresses safety requirements across industries where failure is not an option.
+      </p>
+    </div>
+
+    <div class="grid-5">
+      <article class="industry-card fade-in">
+        <div class="industry-card__img-wrap">
+          <img
+            src="{{ "/assets_extracted/industrial_robot.png" | prepend: site.baseurl }}"
+            alt="Industrial robot"
+            loading="lazy"
+          >
+        </div>
+        <h3>Industrial Robots</h3>
+        <p>Safe human-robot collaboration in manufacturing and logistics environments.</p>
+      </article>
+
+      <article class="industry-card fade-in">
+        <div class="industry-card__img-wrap">
+          <img
+            src="{{ "/assets_extracted/autonomous_driving.png" | prepend: site.baseurl }}"
+            alt="Autonomous driving"
+            loading="lazy"
+          >
+        </div>
+        <h3>Autonomous Driving</h3>
+        <p>Certified decision-making for self-driving vehicles in complex traffic scenarios.</p>
+      </article>
+
+      <article class="industry-card fade-in">
+        <div class="industry-card__img-wrap">
+          <img
+            src="{{ "/assets_extracted/healthcare.png" | prepend: site.baseurl }}"
+            alt="Healthcare AI"
+            loading="lazy"
+          >
+        </div>
+        <h3>Healthcare Systems</h3>
+        <p>Safe autonomous agents supporting clinical decisions and surgical robotics.</p>
+      </article>
+
+      <article class="industry-card fade-in">
+        <div class="industry-card__img-wrap">
+          <img
+            src="{{ "/assets_extracted/telecommunication.png" | prepend: site.baseurl }}"
+            alt="Telecommunications"
+            loading="lazy"
+          >
+        </div>
+        <h3>Telecom</h3>
+        <p>Autonomous network management and optimization with guaranteed performance bounds.</p>
+      </article>
+
+      <article class="industry-card fade-in">
+        <div class="industry-card__img-wrap">
+          <img
+            src="{{ "/assets_extracted/aerial_robot.png" | prepend: site.baseurl }}"
+            alt="Aerial robots and drones"
+            loading="lazy"
+          >
+        </div>
+        <h3>Aerial Robots</h3>
+        <p>Provably safe drone operations for infrastructure inspection, delivery, and surveillance.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     MARKET
+     ================================================================ -->
+<section id="market" class="market">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label" style="color: #5eead4;">Market Opportunity</span>
+      <h2 class="section-title">A trillion-dollar transformation</h2>
+      <div class="divider divider--center"></div>
+      <p class="section-subtitle">
+        The autonomous systems market is undergoing rapid expansion driven by AI adoption, regulatory frameworks, and industrial digitization. VeriSafe is positioned at the center of this growth.
+      </p>
+    </div>
+
+    <div class="market__stats">
+      <div class="market__stat-card fade-in">
+        <h3>Industrial Robotics Market</h3>
+        <div class="market__figure">
+          <div class="market__now">&euro;24Bn</div>
+          <div class="market__arrow">&rarr;</div>
+          <div class="market__future">&euro;132Bn</div>
+        </div>
+        <div class="market__year">2026 &nbsp;&rarr;&nbsp; 2033</div>
+        <div class="market__growth-badge">
+          <span>&#x2191;</span> ~5.5&times; growth over 7 years
+        </div>
+        <p style="font-size: 0.875rem; color: rgba(255,255,255,0.5); margin-top: 1rem; line-height: 1.6;">
+          Industrial automation is accelerating rapidly. Safety certification is becoming the gating requirement for new deployments &mdash; making VeriSafe's technology a critical enabler.
+        </p>
+      </div>
+
+      <div class="market__stat-card fade-in">
+        <h3>Autonomous Driving Market</h3>
+        <div class="market__figure">
+          <div class="market__now">&euro;170Bn</div>
+          <div class="market__arrow">&rarr;</div>
+          <div class="market__future">&euro;656Bn</div>
+        </div>
+        <div class="market__year">2026 &nbsp;&rarr;&nbsp; 2033</div>
+        <div class="market__growth-badge">
+          <span>&#x2191;</span> ~4&times; growth over 7 years
+        </div>
+        <p style="font-size: 0.875rem; color: rgba(255,255,255,0.5); margin-top: 1rem; line-height: 1.6;">
+          Autonomous vehicle OEMs face immense pressure to demonstrate safety compliance. Formal verification is rapidly becoming a prerequisite for regulatory approval in the EU and beyond.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     PARTNERS
+     ================================================================ -->
+<section id="partners" class="partners section">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Partners &amp; Backers</span>
+      <h2 class="section-title">Backed by leading research institutions<br>and industry pioneers</h2>
+      <div class="divider divider--center"></div>
+      <p class="section-subtitle">
+        VeriSafe's founders come from world-leading universities and have attracted partnerships with industry-leading organizations.
+      </p>
+    </div>
+
+    <div class="partners__grid">
+      <div class="partners__grid-section-title">Academic Partners</div>
+
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/uni_RUB.png" | prepend: site.baseurl }}" alt="Ruhr University Bochum" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/uni_Oxford.png" | prepend: site.baseurl }}" alt="University of Oxford" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/uni_Stanford.png" | prepend: site.baseurl }}" alt="Stanford University" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/uni_KTH.png" | prepend: site.baseurl }}" alt="KTH Royal Institute of Technology" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/uni_RWTH_Aachen.png" | prepend: site.baseurl }}" alt="RWTH Aachen University" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/uni_TU_Graz.png" | prepend: site.baseurl }}" alt="TU Graz" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/uni_UT_Austin.png" | prepend: site.baseurl }}" alt="University of Texas at Austin" loading="lazy">
+      </div>
+
+      <div class="partners__grid-section-title">Research Funding</div>
+
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/Grant_EU.png" | prepend: site.baseurl }}" alt="European Union funding" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/Grant_DFG.png" | prepend: site.baseurl }}" alt="DFG Deutsche Forschungsgemeinschaft" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/ERC_grant_DEUCE.png" | prepend: site.baseurl }}" alt="ERC Grant DEUCE" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/NWO_research_grant.png" | prepend: site.baseurl }}" alt="NWO Research Grant" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/Grant_NRW_EFRE.png" | prepend: site.baseurl }}" alt="NRW EFRE Grant" loading="lazy">
+      </div>
+
+      <div class="partners__grid-section-title">Industry Partners</div>
+
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/Company_Ericsson.png" | prepend: site.baseurl }}" alt="Ericsson" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/Company_Canon.png" | prepend: site.baseurl }}" alt="Canon" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/Company_Stateful_Robotcs.jpg" | prepend: site.baseurl }}" alt="Stateful Robotics" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/Company_Multikopter.png" | prepend: site.baseurl }}" alt="Multikopter" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/Company_w3_logistics.png" | prepend: site.baseurl }}" alt="W3 Logistics" loading="lazy">
+      </div>
+      <div class="partners__logo-card fade-in">
+        <img src="{{ "/assets_extracted/Company_Rolsch.jpg" | prepend: site.baseurl }}" alt="Rolsch" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     TEAM
+     ================================================================ -->
+<section id="team" class="team section">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">The Team</span>
+      <h2 class="section-title">World-class researchers,<br>building the future of safe AI</h2>
+      <div class="divider divider--center"></div>
+      <p class="section-subtitle">
+        Our founding team combines deep expertise in formal methods, machine learning, and systems engineering &mdash; with a shared belief that autonomous AI must be verifiably safe.
+      </p>
+    </div>
+
+    <div class="team__grid">
+      <article class="team__card fade-in">
+        <div class="team__photo-wrap">
+          <img
+            src="{{ "/assets_extracted/person_Nils.png" | prepend: site.baseurl }}"
+            alt="Portrait of Nils, Co-Founder and Scientific Lead"
+            loading="lazy"
+          >
+          <div class="team__photo-overlay"></div>
+        </div>
+        <div class="team__body">
+          <h3 class="team__name">Nils</h3>
+          <p class="team__title">Co-Founder &middot; Scientific Lead</p>
+          <p class="team__bio">
+            Professor at Ruhr University Bochum (DE) and Radboud University (NL). Pioneering researcher in sequential-decision making, model checking and verification theory.
+          </p>
+        </div>
+      </article>
+
+      <article class="team__card fade-in">
+        <div class="team__photo-wrap">
+          <img
+            src="{{ "/assets_extracted/person_Manu.jpg" | prepend: site.baseurl }}"
+            alt="Portrait of Manu, Co-Founder"
+            loading="lazy"
+          >
+          <div class="team__photo-overlay"></div>
+        </div>
+        <div class="team__body">
+          <h3 class="team__name">Manu</h3>
+          <p class="team__title">Co-Founder &middot; ML Engineer</p>
+          <p class="team__bio">
+            ML Engineer with deep expertise across enterprise and startup environments. Builds and ships end-to-end ML pipelines from research prototypes to production-grade deployments.
+          </p>
+        </div>
+      </article>
+
+      <article class="team__card fade-in">
+        <div class="team__photo-wrap">
+          <img
+            src="{{ "/assets_extracted/person_Joshua.png" | prepend: site.baseurl }}"
+            alt="Portrait of Joshua, Co-Founder and Engineering Lead"
+            loading="lazy"
+          >
+          <div class="team__photo-overlay"></div>
+        </div>
+        <div class="team__body">
+          <h3 class="team__name">Joshua</h3>
+          <p class="team__title">Co-Founder &middot; PhD Researcher</p>
+          <p class="team__bio">
+            PhD researcher at Ruhr University Bochum. Bridges theory and implementation &mdash; building the systems that turn formal verification into deployable technology.
+          </p>
+        </div>
+      </article>
+
+      <article class="team__card fade-in">
+        <div class="team__photo-wrap">
+          <img
+            src="{{ "/assets_extracted/person_Jule.jpg" | prepend: site.baseurl }}"
+            alt="Portrait of Jule, Co-Founder and ML Engineer"
+            loading="lazy"
+          >
+          <div class="team__photo-overlay"></div>
+        </div>
+        <div class="team__body">
+          <h3 class="team__name">Jule</h3>
+          <p class="team__title">Co-Founder &middot; PhD Researcher</p>
+          <p class="team__bio">
+            PhD researchers specializing in learning-based abstractions and policy synthesis. Ensures the ML components of VeriSafe's pipeline are both powerful and formally certifiable.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     CTA
+     ================================================================ -->
+<section id="contact" class="cta section">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label" style="color: #5eead4;">Join the Mission</span>
+      <h2 class="section-title">Help us make autonomous AI safe for the world</h2>
+      <div class="divider divider--center"></div>
+      <p class="section-subtitle">
+        We are at an inflection point. VeriSafe is raising seed investment and forming partnerships with industry leaders who understand what's at stake.
+      </p>
+    </div>
+
+    <div class="cta__cards">
+      <div class="cta__card fade-in">
+        <div class="cta__card-icon">&#x1F4BC;</div>
+        <h3>Seed Investment</h3>
+        <p>
+          We are raising our seed round to accelerate product development and establish our first commercial deployments. Join us as an early investor in the future of safe autonomous systems.
+        </p>
+        <a href="mailto:joshua.wendland@rub.de?subject=VeriSafe%20Seed%20Investment" class="btn btn--primary">
+          Discuss Investment
+        </a>
+      </div>
+
+      <div class="cta__card fade-in">
+        <div class="cta__card-icon">&#x1F91D;</div>
+        <h3>Industry Partners</h3>
+        <p>
+          Are you an OEM in autonomous vehicles, robotics, or drones? Partner with us to integrate formal verification into your development pipeline and unlock new regulatory pathways.
+        </p>
+        <a href="mailto:joshua.wendland@rub.de?subject=VeriSafe%20Industry%20Partnership" class="btn btn--teal">
+          Become a Partner
+        </a>
+      </div>
+
+      <div class="cta__card fade-in">
+        <div class="cta__card-icon">&#x1F9ED;</div>
+        <h3>Business Expert</h3>
+        <p>
+          Have deep domain expertise in go-to-market, safety-critical industries, or enterprise sales? We are looking for experienced advisors and business development partners to join our journey.
+        </p>
+        <a href="mailto:joshua.wendland@rub.de?subject=VeriSafe%20Business%20Expert" class="btn btn--outline-blue">
+          Get Involved
+        </a>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 4rem; padding: 2rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; max-width: 520px; margin-left: auto; margin-right: auto;">
+      <p style="color: rgba(255,255,255,0.5); font-size: 0.875rem; margin-bottom: 0.75rem;">Direct contact</p>
+      <a href="mailto:joshua.wendland@rub.de" style="color: #60c9f8; font-size: 1.125rem; font-weight: 700; text-decoration: none; letter-spacing: -0.01em;">
+        joshua.wendland@rub.de
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-logo">
+          <img src="{{ "/assets_extracted/Logo_VeriSafe.png" | prepend: site.baseurl }}" alt="VeriSafe logo" width="32" height="32">
+          <span class="footer__brand-name">VeriSafe</span>
+        </div>
+        <p>Making autonomous systems verifiably safe &mdash; by design, not by chance.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Technology</h4>
+        <a href="#vision">Vision</a>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#team">Team</a>
+        <a href="#partners">Partners</a>
+        <a href="#market">Market</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:joshua.wendland@rub.de">joshua.wendland@rub.de</a>
+        <a href="#contact">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; {{ 'now' | date: "%Y" }} VeriSafe. All rights reserved.</span>
+      <span>
+        <a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Legal Notice</a>
+      </span>
+    </div>
+  </div>
+</footer>

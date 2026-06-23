@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {{ content }}
+  <script>
+    // Sticky nav scroll effect
+    (function() {
+      var nav = document.getElementById('main-nav');
+      if (!nav) return;
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 60) {
+          nav.classList.add('nav--scrolled');
+        } else {
+          nav.classList.remove('nav--scrolled');
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav toggle
+    (function() {
+      var btn = document.getElementById('nav-toggle');
+      var menu = document.getElementById('nav-mobile');
+      if (!btn || !menu) return;
+      btn.addEventListener('click', function() {
+        menu.classList.toggle('is-open');
+      });
+      // Close on link click
+      menu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          menu.classList.remove('is-open');
+        });
+      });
+    })();
+
+    // Fade-in on scroll
+    (function() {
+      var els = document.querySelectorAll('.fade-in');
+      if (!els.length) return;
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      els.forEach(function(el) { obs.observe(el); });
+    })();
+  </script>
+</body>
+</html>
