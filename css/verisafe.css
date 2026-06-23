@@ -643,48 +643,75 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .problem__points {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-5);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
   margin-top: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .problem__points {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .problem__point {
   display: flex;
-  gap: var(--space-4);
-  align-items: flex-start;
-  padding: var(--space-5);
-  background: var(--white);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-6);
+  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, var(--white) 100%);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-  border-left: 4px solid var(--red);
+  box-shadow: var(--shadow-md);
+  border-top: 3px solid var(--red);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.problem__point::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(192, 48, 48, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.problem__point:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
 }
 
 .problem__point-icon {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-bottom: var(--space-3);
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(192, 48, 48, 0.1));
 }
 
 .problem__point h4 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--navy);
-  margin-bottom: var(--space-1);
+  margin-bottom: var(--space-2);
+  position: relative;
+  z-index: 1;
 }
 
 .problem__point p {
   font-size: 0.875rem;
   color: var(--slate-mid);
   line-height: 1.6;
+  position: relative;
+  z-index: 1;
 }
 
-@media (min-width: 900px) {
-  .problem__layout {
-    grid-template-columns: 1fr 1fr;
-  }
-  .problem__visual { order: 0; }
-}
+/* Problem layout is now single column since visual is removed */
 
 /* --------------------------------------------------------------------------
    9. Solution Section
